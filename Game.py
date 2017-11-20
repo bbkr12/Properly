@@ -9,7 +9,9 @@ running = None
 PleyerBullet = []
 MonsterBullet = []
 BommBullet = []
+BoomB = []
 Mop = []
+
 
 
 class Field:
@@ -30,9 +32,12 @@ class Field:
 
 class Player:
     image = None
+    BoomTime = 0
     Time = 0
     Speed = 300
-    Sprite = 225
+    Sprite = 186
+    Boom = False
+    BoomSpriteX, BoomSpriteY = 0, 0
     RIGHT, LEFT, UP, DOWN = False, False, False, False
 
     LEFT_RUN, RIGHT_RUN = 0, 1
@@ -52,10 +57,10 @@ class Player:
 
             if event.type == SDL_KEYUP and event.key == SDLK_RIGHT:
                 self.RIGHT = False
-                self.Sprite = 225
+                self.Sprite = 186
             elif event.type == SDL_KEYUP and event.key == SDLK_LEFT:
                 self.LEFT = False
-                self.Sprite = 225
+                self.Sprite = 186
             if event.type == SDL_KEYUP and event.key == SDLK_UP:
                 self.UP = False
             elif event.type == SDL_KEYUP and event.key == SDLK_DOWN:
@@ -66,7 +71,10 @@ class Player:
 
 
             if event.type == SDL_KEYDOWN and event.key == SDLK_s:
-                BoomBullet.append(Boom(False))
+                if self.Boom == False:
+                    self.Boom = True
+                    self.image = load_image('수정됨_Strike.png')
+                    BoomBullet.append(Boom(False))
 
     def __init__(self):
         self.x, self.y = 400, 90
@@ -75,7 +83,7 @@ class Player:
         #self.total_frames = 0.0
         #self.dir = 1
         #self.state = self.RIGHT_RUN
-        self.image = load_image('Player.png')
+        self.image = load_image('수정됨_Player.png')
         # fill here
 
 
@@ -85,15 +93,29 @@ class Player:
         self.Key(frame_time)
         #math.sqrt(100) #수학함수
 
+        if self.Boom == True:
+            self.BoomTime += frame_time
+            if self.BoomTime > 0.05:
+                if self.BoomSpriteX > 46:
+                    self.BoomSpriteX = 0
+                    self.image = load_image('수정됨_Player.png')
+                    self.Boom = False
+
+                self.BoomTime = 0
+                self.BoomSpriteX += 1
+
+            return
+
+
         self.Time += frame_time
         if self.Time > 0.1:
             self.Time = 0
             if self.RIGHT == True:
-                self.Sprite += 75
-                if self.Sprite >= 450:
-                    self.Sprite = 450
+                self.Sprite += 62
+                if self.Sprite >= 373:
+                    self.Sprite = 373
             if self.LEFT == True:
-                self.Sprite -= 75
+                self.Sprite -= 62
                 if self.Sprite <= 0:
                     self.Sprite = 0
 
@@ -111,8 +133,8 @@ class Player:
 
         if self.UP == True:
             self.y += frame_time * self.Speed
-            if self.y > 595:
-                self.y = 595
+            if self.y > 995:
+                self.y = 995
 
         if self.DOWN == True:
             self.y -= frame_time * self.Speed
@@ -125,16 +147,22 @@ class Player:
         #Boy.font.draw(self.x - 40, self.y + 50, 'Time : %3.2f' %get_time(), (255, 255, 0))
         #self.image.opacify(1)
         #self.image.clip_draw(self.frame * 64, self.state * 64, 64, 64, self.x, self.y + 150)
-        self.image.clip_draw(self.Sprite, 0, 75, 75, self.x+6, self.y)
+        if self.Boom == True:
+            self.image.clip_draw(180 * self.BoomSpriteX, 0, 180, 398, self.x, self.y)
+        else:
+            self.image.clip_draw(self.Sprite, 0, 62, 96, self.x, self.y)
         draw_rectangle(*self.get_bb())
 
     def get_bb(self):
-        return self.x - 15, self.y - 32.5, self.x + 15, self.y + 32.5
+        if self.Boom == False:
+            return self.x - 15, self.y - 32.5, self.x + 15, self.y + 32.5
+        else:
+            return self.x+ 9999 - 15, self.y+ 9999 - 32.5, self.x+ 9999 + 15, self.y+ 9999 + 32.5
 
 class MyBullet:
     image = None
     Death = False
-    Speed = 600
+    Speed = 900
     Power = 0
     x, y = 0, 100
 
@@ -145,7 +173,7 @@ class MyBullet:
 
     def update(self, frame_time):
         self.y += frame_time * self.Speed
-        if self.y > 595:
+        if self.y > 995:
             self.Death = True
 
     def draw(self):
@@ -160,6 +188,7 @@ class Boom:
     Death = False
     Speed = 100
     x, y = 400, 0
+    LunchTime = 0
     Time = 0
 
     def __init__(self, Death):
@@ -168,17 +197,38 @@ class Boom:
         self.Death = Death
 
     def update(self, frame_time):
+        if self.Death == True:
+            return
+
+
         self.Time += frame_time
 
         if self.Time < 3:
+            self.LunchTime += frame_time
             self.Speed = 50
+
+            if self.LunchTime > 0.1:
+                self.LunchTime = 0
+                BoomB.append(BBB(self.x, self.y + 120, 0))
+                BoomB.append(BBB(self.x - 75, self.y + 50, 1))
+                BoomB.append(BBB(self.x - 150, self.y, 2))
+                BoomB.append(BBB(self.x + 75, self.y + 50, 3))
+                BoomB.append(BBB(self.x + 150, self.y, 4))
         elif self.Time < 7:
             self.Speed = 0
+            self.LunchTime += frame_time
+            if self.LunchTime > 0.1:
+                self.LunchTime = 0
+                BoomB.append(BBB(self.x, self.y + 120, 0))
+                BoomB.append(BBB(self.x - 75, self.y + 50, 1))
+                BoomB.append(BBB(self.x - 150, self.y, 2))
+                BoomB.append(BBB(self.x + 75, self.y + 50, 3))
+                BoomB.append(BBB(self.x + 150, self.y, 4))
         elif self.Time > 7:
-            self.Speed = 1800
+            self.Speed = 600
 
         self.y += frame_time * self.Speed
-        if self.y > 800:
+        if self.y > 1100:
             self.Death = True
 
     def draw(self):
@@ -187,6 +237,60 @@ class Boom:
 
     def get_bb(self):
         return self.x - 250, self.y - 125, self.x + 250, self.y + 10
+
+class BBB:
+    image = None
+    Death = False
+    Speed = 700
+    Postion = 0
+    x, y = 0, 100
+    Time = 0
+    Sprite = 0
+
+    def __init__(self, x, y, Postion):
+        self.Postion = Postion
+        self.x = x
+        self.y = y
+        self.image = load_image('BoomMis.png')
+
+    def update(self, frame_time):
+
+        if self.Postion == 0:
+            self.y += frame_time * self.Speed
+        elif self.Postion == 1:
+            self.x -= frame_time * (self.Speed/4)
+            self.y += frame_time * self.Speed
+
+        elif self.Postion == 3:
+            self.x += frame_time * (self.Speed / 4)
+            self.y += frame_time * self.Speed
+
+        elif self.Postion == 2:
+            self.x -= frame_time * (self.Speed/2)
+            self.y += frame_time * self.Speed
+
+        elif self.Postion == 4:
+            self.x += frame_time * (self.Speed / 2)
+            self.y += frame_time * self.Speed
+
+
+        if self.y > 1000:
+            self.Death = True
+
+        self.Time += frame_time
+        if self.Time > 0.1:
+            self.Time = 0
+            self.Sprite += 1
+            if self.Sprite > 2:
+                self.Sprite = 0
+
+    def draw(self):
+        self.image.clip_draw(36 * self.Sprite, 0, 36, 38, self.x, self.y)
+        draw_rectangle(*self.get_bb())
+
+    def get_bb(self):
+        return self.x - 5, self.y - 5, self.x + 5, self.y + 5
+
 
 class MonBullet:
     image = None
@@ -212,18 +316,23 @@ class MonBullet:
         return self.x - 5, self.y - 5, self.x + 5, self.y + 5
 
 class Monster:
-    Hp = 5
+    Hp = 2
     image = None
     Death = False
     Destroy = False
     Time = 0;
     Sprite = 0
     Lunchtime = 0
-
-    def __init__(self,x , y):
+    Type = 0
+    def __init__(self,x , y, Type):
+        self.Type = Type
         self.x, self.y = x, y
-        if Monster.image == None:
+        if self.Type == 0:
             Monster.image = load_image('Monster.png')
+        if self.Type == 1:
+            Monster.image = load_image('RLMonster.png')
+        if self.Type == 2:
+            Monster.image = load_image('LRMonster.png')
         # fill here
 
 
@@ -232,7 +341,9 @@ class Monster:
 
         self.Lunchtime += frame_time
         if self.Lunchtime > 1:
-            MonsterBullet.append()
+            self.Lunchtime = 0
+            #MonsterBullet.append(MonBullet(self.x, self.y))
+
         if self.Hp <= 0:
             self.Destroy = True
             self.Time += frame_time
@@ -252,7 +363,7 @@ class Monster:
     def draw(self):
         # fill here
         if self.Destroy == False:
-            self.image.clip_draw(0, 0, 63, 82, self.x, self.y)
+            self.image.clip_draw(0, 0, 82, 82, self.x, self.y)
         else:
             self.image.clip_draw(self.Sprite, 0, 60, 54, self.x, self.y)
 
@@ -285,7 +396,7 @@ def Distance(a, b):
 
 
 current_time = 0.0
-
+Progress = 0
 
 def get_frame_time():
 
@@ -298,26 +409,24 @@ def get_frame_time():
 
 def main():
 
-    open_canvas(800, 600)
+    open_canvas(800, 1000)
 
     global running
     global current_time
+    global Progress
     global PlayerBullet
     global BoomBullet
     global Mop
     global MonsterBullet
+    global BoomB
     PlayerBullet = [MyBullet(9000, 300)]
     MonsterBullet = [MonBullet(-10, 300)]
+    BoomB = [BBB(1000, 1000, 0)]
     BoomBullet = [Boom(True)]
 
+    Progress = 0
 
-    Mop = [Monster(100 + (i * 100), 500) for i in range(0, 7)]
-    #Mop.append(Monster(300, 500))
-    #Mop.append(Monster(200, 500))
-    #Mop.append(Monster(100, 500))
-    #Mop.append(Monster(500, 500))
-    #Mop.append(Monster(600, 500))
-    #Mop.append(Monster(700, 500))
+    Mop = [Monster(100 + (i * 100), 900, 0) for i in range(0, 7)]
     hero = Player()
     field = Field()
 
@@ -330,9 +439,20 @@ def main():
         # Game Logic
         # Update
         frame_time = get_frame_time()
+        Progress += frame_time
         #handle_events(frame_time)
         field.update(frame_time)
         hero.update(frame_time)
+
+        for mBullet in MonsterBullet:
+            mBullet.update(frame_time)
+            if mBullet.Death == True:
+                MonsterBullet.remove(mBullet)
+
+        for bBullet in BoomB:
+            bBullet.update(frame_time)
+            if bBullet .Death == True:
+                BoomB.remove(bBullet )
 
         for mBullet in BoomBullet:
             mBullet.update(frame_time)
@@ -360,11 +480,19 @@ def main():
         clear_canvas()
         field.draw()
 
+
+        for mBullet in MonsterBullet:
+            mBullet.draw()
         for mop in Mop:
             mop.draw()
 
+        for bBullet in BoomB:
+            bBullet.draw()
+
         for mBullet in BoomBullet:
             mBullet.draw()
+
+
 
         hero.draw()
         for pBullet in PlayerBullet:
