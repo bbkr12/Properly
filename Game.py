@@ -17,7 +17,7 @@ Mop = []
 class Field:
     Y = 0
     def __init__(self):
-        self.image = load_image('Background.bmp')
+        self.image = load_image('Resource/Map/Background.bmp')
 
     def update(self, frame_time):
         self.Y += frame_time * 100
@@ -73,7 +73,7 @@ class Player:
             if event.type == SDL_KEYDOWN and event.key == SDLK_s:
                 if self.Boom == False:
                     self.Boom = True
-                    self.image = load_image('수정됨_Strike.png')
+                    self.image = load_image('Resource/Effect/수정됨_Strike.png')
                     BoomBullet.append(Boom(False))
 
     def __init__(self):
@@ -83,7 +83,7 @@ class Player:
         #self.total_frames = 0.0
         #self.dir = 1
         #self.state = self.RIGHT_RUN
-        self.image = load_image('수정됨_Player.png')
+        self.image = load_image('Resource/Player/수정됨_Player.png')
         # fill here
 
 
@@ -98,7 +98,7 @@ class Player:
             if self.BoomTime > 0.05:
                 if self.BoomSpriteX > 46:
                     self.BoomSpriteX = 0
-                    self.image = load_image('수정됨_Player.png')
+                    self.image = load_image('Resource/Player/수정됨_Player.png')
                     self.Boom = False
 
                 self.BoomTime = 0
@@ -169,7 +169,7 @@ class MyBullet:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.image = load_image('PBullet.png')
+        self.image = load_image('Resource/Missile/PBullet.png')
 
     def update(self, frame_time):
         self.y += frame_time * self.Speed
@@ -193,7 +193,7 @@ class Boom:
 
     def __init__(self, Death):
         print("미사일 생성")
-        self.image = load_image('Boom.png')
+        self.image = load_image('Resource/Effect/Boom.png')
         self.Death = Death
 
     def update(self, frame_time):
@@ -251,7 +251,7 @@ class BBB:
         self.Postion = Postion
         self.x = x
         self.y = y
-        self.image = load_image('BoomMis.png')
+        self.image = load_image('Resource/Missile/BoomMis.png')
 
     def update(self, frame_time):
 
@@ -289,7 +289,7 @@ class BBB:
         draw_rectangle(*self.get_bb())
 
     def get_bb(self):
-        return self.x - 5, self.y - 5, self.x + 5, self.y + 5
+        return self.x - 10, self.y - 10, self.x + 10, self.y + 10
 
 
 class MonBullet:
@@ -301,7 +301,7 @@ class MonBullet:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.image = load_image('mBullet.jpg')
+        self.image = load_image('Resource/Missile/mBullet.jpg')
 
     def update(self, frame_time):
         self.y -= frame_time * self.Speed
@@ -328,11 +328,11 @@ class Monster:
         self.Type = Type
         self.x, self.y = x, y
         if self.Type == 0:
-            Monster.image = load_image('Monster.png')
+            Monster.image = load_image("Resource/Monster/Monster.png")
         if self.Type == 1:
-            Monster.image = load_image('RLMonster.png')
+            Monster.image = load_image("Resource/Monster/RLMonster.png")
         if self.Type == 2:
-            Monster.image = load_image('LRMonster.png')
+            Monster.image = load_image("Resource/Monster/LRMonster.png")
         # fill here
 
 
@@ -342,7 +342,7 @@ class Monster:
         self.Lunchtime += frame_time
         if self.Lunchtime > 1:
             self.Lunchtime = 0
-            #MonsterBullet.append(MonBullet(self.x, self.y))
+            MonsterBullet.append(MonBullet(self.x, self.y))
 
         if self.Hp <= 0:
             self.Destroy = True
@@ -355,7 +355,7 @@ class Monster:
                 self.Death = True
 
         if self.Destroy == True:
-            self.image = load_image('Destory.png')
+            self.image = load_image('Resource/Effect/Destory.png')
 
 
 
