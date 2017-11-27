@@ -92,7 +92,7 @@ class Monster:
         if (self.hero.y >= self.y):
             self.Angle = 2 * 3.141592 - self.Angle
         self.Lunchtime += frame_time
-        if self.Lunchtime > 1.5:
+        if self.Lunchtime > 2.2:
             self.Lunchtime = 0
             self.MonsterBullet.append(Bullet.MonBullet(self.x, self.y, self.Angle))
 

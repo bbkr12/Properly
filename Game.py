@@ -9,12 +9,12 @@ import Bullet
 import Monster
 
 running = None
-PlayerBullet = []
-MonsterBullet = []
-BoomBullet = []
-BoomB = []
-Mop = []
-hero = None
+PlayerBullet = [] # 플레이어의 탄환 리스트 컨테이너
+MonsterBullet = [] # 몬스터의 탄환 리스트 컨테이너
+BoomBullet = [] # 플레이어의 폭탄 리스트 컨테이너
+BoomB = [] # 폭탄의 탄환 리스트 컨테이너
+Mop = [] # 몬스터 리스트 컨테이너
+hero = None # 플레이어
 
 
 
@@ -53,8 +53,8 @@ def Distance(a, b):
 
 
 
-current_time = 0.0
-Progress = 0
+current_time = 0.0 # 진행 시간
+Progress = 0 # 진행 단계
 
 
 
@@ -80,6 +80,7 @@ def main():
     global MonsterBullet
     global BoomB
     global hero
+
     PlayerBullet = [Bullet.MyBullet(9000, 300)]
     MonsterBullet = [Bullet.MonBullet(-10, -999, -90)]
     BoomB = [Bullet.BBB(1000, 1000, 0)]
@@ -99,7 +100,8 @@ def main():
     while running:
 
         #print(current_time)
-
+        #######################################################
+        #Game Progress
         if current_time > 3 and Progress == 0:
             Mop = [Monster.Monster(800 + (i * 100), 1000 + (i * 100), 1, hero, MonsterBullet) for i in range(0, 5)]
             Mop[4].Red = True
@@ -111,9 +113,8 @@ def main():
             Mop[4].Red = True
             Mop[4].image = load_image("Resource/Monster/LRMonster_Red.png")
             Progress += 1
+        ######################################################
 
-
-        # Game Logic
         # Update
         frame_time = get_frame_time()
         #handle_events(frame_time)
