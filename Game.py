@@ -11,6 +11,7 @@ MonsterBullet = []
 BommBullet = []
 BoomB = []
 Mop = []
+hero = None
 
 
 
@@ -297,14 +298,17 @@ class MonBullet:
     Death = False
     Speed = 400
     x, y = 0, 100
+    Angle = 0
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, angle):
         self.x = x
         self.y = y
         self.image = load_image('Resource/Missile/mBullet.jpg')
+        self.Angle = angle
 
     def update(self, frame_time):
-        self.y -= frame_time * self.Speed
+        self.y -= math.sin(self.Angle) * frame_time * self.Speed
+        self.x += math.cos(self.Angle) * frame_time * self.Speed
         if self.y < 5:
             self.Death = True
 
@@ -324,7 +328,13 @@ class Monster:
     Sprite = 0
     Lunchtime = 0
     Type = 0
-    def __init__(self,x , y, Type):
+    Speed = 300
+    hero
+    Width = 0
+    Height = 0
+    Dis = 0
+    Angle = 0
+    def __init__(self,x , y, Type, hero):
         self.Type = Type
         self.x, self.y = x, y
         if self.Type == 0:
@@ -333,16 +343,33 @@ class Monster:
             Monster.image = load_image("Resource/Monster/RLMonster.png")
         if self.Type == 2:
             Monster.image = load_image("Resource/Monster/LRMonster.png")
+
+        self.hero = hero;
         # fill here
 
 
     def update(self, frame_time):
         # fill here
+        if self.Type == 1:
+            self.x -= frame_time * self.Speed;
+            self.y -= frame_time * self.Speed;
+            if self.y < -50:
+                self.Death = True;
+                print("몬스터 삭제")
+            if self.x < -50:
+                self.Death = True
 
-        self.Lunchtime += frame_time
-        if self.Lunchtime > 1:
-            self.Lunchtime = 0
-            MonsterBullet.append(MonBullet(self.x, self.y))
+            self.Height = self.hero.y - self.y
+            self.Width = self.hero.x - self.x
+            self.Dis = math.sqrt((self.Width * self.Width) + (self.Height * self.Height))
+            self.Angle = math.acos(self.Width / self.Dis)
+            if (self.hero.y >= self.y):
+                self.Angle = 2 * 3.141592 - self.Angle
+            self.Lunchtime += frame_time
+            if self.Lunchtime > 1.5:
+                self.Lunchtime = 0
+                MonsterBullet.append(MonBullet(self.x, self.y, self.Angle))
+
 
         if self.Hp <= 0:
             self.Destroy = True
@@ -398,6 +425,8 @@ def Distance(a, b):
 current_time = 0.0
 Progress = 0
 
+
+
 def get_frame_time():
 
     global current_time
@@ -419,27 +448,35 @@ def main():
     global Mop
     global MonsterBullet
     global BoomB
+    global hero
     PlayerBullet = [MyBullet(9000, 300)]
-    MonsterBullet = [MonBullet(-10, 300)]
+    MonsterBullet = [MonBullet(-10, -999, -90)]
     BoomB = [BBB(1000, 1000, 0)]
     BoomBullet = [Boom(True)]
 
     Progress = 0
 
-    Mop = [Monster(100 + (i * 100), 900, 0) for i in range(0, 7)]
+
     hero = Player()
     field = Field()
 
+
     running = True
     current_time = get_time()
-
+    #Mop = [Monster(400, 600, 1, hero) for i in range(0, 2)]
     # 반복문
     while running:
+
+        #print(current_time)
+
+        if current_time > 3 and Progress == 0:
+            Mop = [Monster(800 + (i * 100), 1000 + (i * 100), 1, hero) for i in range(0, 5)]
+            Progress += 1
+
 
         # Game Logic
         # Update
         frame_time = get_frame_time()
-        Progress += frame_time
         #handle_events(frame_time)
         field.update(frame_time)
         hero.update(frame_time)
@@ -474,6 +511,10 @@ def main():
                 if Collide(pBullet, mop) :
                     mop.Hp -= 1 + pBullet.Power
                     PlayerBullet.remove(pBullet)
+
+        for pBullet in MonsterBullet:
+            if Collide(pBullet, hero):
+                MonsterBullet.remove(pBullet)
 
 
         # Render
