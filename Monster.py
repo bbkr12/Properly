@@ -28,12 +28,19 @@ class Monster:
     def __init__(self,x , y, Type, hero, MonsterBullet):
         self.Type = Type
         self.x, self.y = x, y
+
         if self.Type == 0:
-            Monster.image = load_image("Resource/Monster/Monster.png")
+                Monster.image = load_image("Resource/Monster/Monster.png")
         if self.Type == 1:
-            Monster.image = load_image("Resource/Monster/RLMonster.png")
+            if self.Red == True:
+                Monster.image = load_image("Resource/Monster/RLMonster_Red.png")
+            else:
+                Monster.image = load_image("Resource/Monster/RLMonster.png")
         if self.Type == 2:
-            Monster.image = load_image("Resource/Monster/LRMonster.png")
+            if self.Red == True:
+                Monster.image = load_image("Resource/Monster/LRMonster_Red.png")
+            else:
+                Monster.image = load_image("Resource/Monster/LRMonster.png")
 
         self.hero = hero;
         self.MonsterBullet = MonsterBullet
@@ -41,7 +48,23 @@ class Monster:
 
 
     def update(self, frame_time):
-        # fill here
+        #죽음
+        if self.Hp <= 0:
+            if self.Destroy == False:
+                self.Destroy = True
+                self.image = load_image('Resource/Effect/Destory.png')
+            self.Time += frame_time
+            if self.Time > 0.1:
+                self.Time = 0
+                self.Sprite += 60
+
+            if self.Sprite >= 660:
+                self.Death = True
+            return
+
+#############################################################################################
+
+        # 타입별 AI
         if self.Type == 1:
             self.x -= frame_time * self.Speed;
             self.y -= frame_time * self.Speed;
@@ -51,18 +74,7 @@ class Monster:
             if self.x < -50:
                 self.Death = True
 
-            self.Height = self.hero.y - self.y
-            self.Width = self.hero.x - self.x
-            self.Dis = math.sqrt((self.Width * self.Width) + (self.Height * self.Height))
-            self.Angle = math.acos(self.Width / self.Dis)
-            if (self.hero.y >= self.y):
-                self.Angle = 2 * 3.141592 - self.Angle
-            self.Lunchtime += frame_time
-            if self.Lunchtime > 1.5:
-                self.Lunchtime = 0
-                self.MonsterBullet.append(Bullet.MonBullet(self.x, self.y, self.Angle))
-
-        if self.Type == 2:
+        elif self.Type == 2:
             self.x += frame_time * self.Speed;
             self.y -= frame_time * self.Speed;
             if self.y < -50:
@@ -71,32 +83,18 @@ class Monster:
             if self.x > 850:
                 self.Death = True
 
-            self.Height = self.hero.y - self.y
-            self.Width = self.hero.x - self.x
-            self.Dis = math.sqrt((self.Width * self.Width) + (self.Height * self.Height))
-            self.Angle = math.acos(self.Width / self.Dis)
-            if (self.hero.y >= self.y):
-                self.Angle = 2 * 3.141592 - self.Angle
-            self.Lunchtime += frame_time
-            if self.Lunchtime > 1.5:
-                self.Lunchtime = 0
-                self.MonsterBullet.append(Bullet.MonBullet(self.x, self.y, self.Angle))
 
-
-        if self.Hp <= 0:
-            self.Destroy = True
-            self.Time += frame_time
-            if self.Time > 0.1:
-                self.Time = 0
-                self.Sprite += 60
-
-            if self.Sprite >= 660:
-                self.Death = True
-
-        if self.Destroy == True:
-            self.image = load_image('Resource/Effect/Destory.png')
-
-
+        #몬스터 공통사항
+        self.Height = self.hero.y - self.y
+        self.Width = self.hero.x - self.x
+        self.Dis = math.sqrt((self.Width * self.Width) + (self.Height * self.Height))
+        self.Angle = math.acos(self.Width / self.Dis)
+        if (self.hero.y >= self.y):
+            self.Angle = 2 * 3.141592 - self.Angle
+        self.Lunchtime += frame_time
+        if self.Lunchtime > 1.5:
+            self.Lunchtime = 0
+            self.MonsterBullet.append(Bullet.MonBullet(self.x, self.y, self.Angle))
 
 
     def draw(self):

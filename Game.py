@@ -102,10 +102,14 @@ def main():
 
         if current_time > 3 and Progress == 0:
             Mop = [Monster.Monster(800 + (i * 100), 1000 + (i * 100), 1, hero, MonsterBullet) for i in range(0, 5)]
+            Mop[4].Red = True
+            Mop[4].image = load_image("Resource/Monster/RLMonster_Red.png")
             Progress += 1
 
         if current_time > 8 and Progress == 1:
             Mop = [Monster.Monster(0 - (i * 100), 1000 + (i * 100), 2, hero, MonsterBullet) for i in range(0, 5)]
+            Mop[4].Red = True
+            Mop[4].image = load_image("Resource/Monster/LRMonster_Red.png")
             Progress += 1
 
 
