@@ -117,7 +117,6 @@ def main():
 
         # Update
         frame_time = get_frame_time()
-        #handle_events(frame_time)
         field.update(frame_time)
         hero.update(frame_time)
 
@@ -141,20 +140,41 @@ def main():
             if pBullet.Death == True:
                 PlayerBullet.remove(pBullet)
 
-
-
         for mop in Mop:
             mop.update(frame_time)
             if mop.Death == True:
                 Mop.remove(mop)
+
+
+
+        #Collide
+        for mop in Mop: # 몬스터 <-> 플레이어 총알
             for pBullet in PlayerBullet:
                 if Collide(pBullet, mop) :
                     mop.Hp -= 1 + pBullet.Power
                     PlayerBullet.remove(pBullet)
 
-        for pBullet in MonsterBullet:
+        for mop in Mop: # 몬스터 <-> 폭탄의 총알
+            for boomb in BoomB:
+                if Collide(boomb, mop) :
+                    mop.Hp -= 1
+                    BoomB.remove(boomb)
+
+        for mop in Mop: # 몬스터 <-> 폭탄
+            for boombullet in BoomBullet:
+                if Collide(boombullet, mop):
+                    mop.Hp -= 10
+
+        for pBullet in MonsterBullet: # 몬스터 총알 <-> 플레이어
             if Collide(pBullet, hero):
                 MonsterBullet.remove(pBullet)
+
+        for pBullet in MonsterBullet: # 폭탄 <-> 몬스터 총알
+            for boombullet in BoomBullet:
+                if Collide(pBullet, boombullet):
+                    MonsterBullet.remove(pBullet)
+
+
 
 
         # Render
@@ -173,12 +193,10 @@ def main():
         for mBullet in BoomBullet:
             mBullet.draw()
 
-
-
-        hero.draw()
         for pBullet in PlayerBullet:
             pBullet.draw()
 
+        hero.draw()
 
         update_canvas()
 
