@@ -9,13 +9,15 @@ class Player:
     image = None
     BoomTime = 0
     Time = 0
-    Speed = 300
+    Speed = 500
     Sprite = 186
     Boom = False
     BoomSpriteX, BoomSpriteY = 0, 0
     PlayerBullet = None
     BoomBullet = None
     BoomB = None
+    Power = 1
+    BoomCount = 2
     RIGHT, LEFT, UP, DOWN = False, False, False, False
 
     LEFT_RUN, RIGHT_RUN = 0, 1
@@ -45,14 +47,16 @@ class Player:
                 self.DOWN= False
 
             if event.type == SDL_KEYDOWN and event.key == SDLK_a:
-                self.PlayerBullet.append(Bullet.MyBullet(self.x-1, self.y + 30))
+                self.PlayerBullet.append(Bullet.MyBullet(self.x-1, self.y + 30, self.Power))
 
 
             if event.type == SDL_KEYDOWN and event.key == SDLK_s:
-                if self.Boom == False:
-                    self.Boom = True
-                    self.image = load_image('Resource/Effect/수정됨_Strike.png')
-                    self.BoomBullet.append(Bullet.Boom(False, self.BoomB))
+                if self.BoomCount > 0:
+                    if self.Boom == False:
+                        self.BoomCount -= 1
+                        self.Boom = True
+                        self.image = load_image('Resource/Effect/수정됨_Strike.png')
+                        self.BoomBullet.append(Bullet.Boom(False, self.BoomB))
 
     def __init__(self, PlayerBullet, BoomBullet, BoomB):
         self.x, self.y = 400, 90

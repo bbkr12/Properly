@@ -14,18 +14,18 @@ class MyBullet:
     Power = 0
     x, y = 0, 100
 
-    def __init__(self, x, y):
+    def __init__(self, x, y, Power):
         self.x = x
         self.y = y
         self.image = load_image('Resource/Missile/PBullet.png')
-
+        self.Power = Power
     def update(self, frame_time):
         self.y += frame_time * self.Speed
         if self.y > 995:
             self.Death = True
 
     def draw(self):
-        self.image.clip_draw(self.Power, 0, 15, 28, self.x, self.y)
+        self.image.clip_draw((self.Power - 1) * 15, 0, 15, 28, self.x, self.y)
         draw_rectangle(*self.get_bb())
 
     def get_bb(self):
@@ -41,7 +41,6 @@ class Boom:
     BoomB = None
 
     def __init__(self, Death, BoomB):
-        print("미사일 생성")
         self.image = load_image('Resource/Effect/Boom.png')
         self.Death = Death
         self.BoomB = BoomB
@@ -167,3 +166,32 @@ class MonBullet:
 
     def get_bb(self):
         return self.x - 5, self.y - 5, self.x + 5, self.y + 5
+
+
+
+class MonMiddleBullet:
+    image = None
+    Death = False
+    Speed = 450
+    x, y = 0, 100
+    Angle = 0
+
+    def __init__(self, x, y, angle):
+        self.x = x
+        self.y = y
+        self.image = load_image('Resource/Missile/MiddleMissile.jpg')
+        self.Angle = angle
+
+    def update(self, frame_time):
+        self.y -= math.sin(self.Angle) * frame_time * self.Speed
+        self.x += math.cos(self.Angle) * frame_time * self.Speed
+        if self.y < 5:
+            self.Death = True
+
+    def draw(self):
+        self.image.clip_draw(0, 0, 23, 23, self.x, self.y)
+        draw_rectangle(*self.get_bb())
+
+    def get_bb(self):
+        return self.x - 10, self.y - 10, self.x + 10, self.y + 10
+
