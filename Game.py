@@ -177,6 +177,16 @@ def main():
                 Mop.append(Monster.Monster(random.randint(50, 750), random.randint(1000, 1400), 0, hero, MonsterBullet))
             Progress += 1
 
+        elif current_time > 66 and Progress == 10:
+            for i in range(0, 10):
+                Mop.append(Monster.Monster(random.randint(50, 750), random.randint(1000, 1400), 0, hero, MonsterBullet))
+            Progress += 1
+
+        elif current_time > 73 and Progress == 11:
+            for i in range(0, 10):
+                Mop.append(Monster.Monster(random.randint(50, 750), random.randint(1000, 1400), 0, hero, MonsterBullet))
+            Progress += 1
+
 
 
         ######################################################
@@ -211,6 +221,7 @@ def main():
             if mop.Death == True:
                 if mop.Red == True:
                     if mop.Type == 1 or mop.Type == 2:
+                        print("아이템생성")
                         ITEM.append(Item.Item(mop.x, mop.y, 1))
                     else:
                         ITEM.append(Item.Item(mop.x, mop.y, 2))

@@ -136,6 +136,6 @@ class Player:
 
     def get_bb(self):
         if self.Boom == False:
-            return self.x - 15, self.y - 32.5, self.x + 15, self.y + 32.5
+            return self.x - 12.5, self.y - 12.5, self.x + 12.5, self.y + 12.5
         else:
             return self.x+ 9999 - 15, self.y+ 9999 - 32.5, self.x+ 9999 + 15, self.y+ 9999 + 32.5
