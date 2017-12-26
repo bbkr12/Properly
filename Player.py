@@ -9,7 +9,7 @@ class Player:
     image = None
     BoomTime = 0
     Time = 0
-    Speed = 500
+    Speed = 300
     Sprite = 186
     Boom = False
     BoomSpriteX, BoomSpriteY = 0, 0
@@ -18,7 +18,16 @@ class Player:
     BoomB = None
     Power = 1
     BoomCount = 2
+    PlayerLife = 2
+    Death = False
+    Opacify = 1
     RIGHT, LEFT, UP, DOWN = False, False, False, False
+    BombSound = None
+    MissileSound = None
+
+
+
+    DeathTime = 0
 
     LEFT_RUN, RIGHT_RUN = 0, 1
 
@@ -48,23 +57,29 @@ class Player:
 
             if event.type == SDL_KEYDOWN and event.key == SDLK_a:
                 self.PlayerBullet.append(Bullet.MyBullet(self.x-1, self.y + 30, self.Power))
+                self.MissileSound.play()
 
 
             if event.type == SDL_KEYDOWN and event.key == SDLK_s:
                 if self.BoomCount > 0:
                     if self.Boom == False:
+                        self.BombSound.play()
                         self.BoomCount -= 1
                         self.Boom = True
-                        self.image = load_image('Resource/Effect/수정됨_Strike.png')
+                        self.image = load_image('Resource/Effect/Strike.png')
                         self.BoomBullet.append(Bullet.Boom(False, self.BoomB))
 
     def __init__(self, PlayerBullet, BoomBullet, BoomB):
         self.x, self.y = 400, 90
         self.frame = 0
-        self.image = load_image('Resource/Player/수정됨_Player.png')
+        self.image = load_image('Resource/Player/Player.png')
         self.PlayerBullet = PlayerBullet
         self.BoomBullet = BoomBullet
         self.BoomB = BoomB
+        self.BombSound = load_wav('Sound/Bomb.wav')
+        self.BombSound.set_volume(50)
+        self.MissileSound = load_wav('Sound/Missile2.wav')
+        self.MissileSound.set_volume(32)
         # fill here
 
 
@@ -74,12 +89,21 @@ class Player:
         self.Key(frame_time)
         #math.sqrt(100) #수학함수
 
+        if self.Death == True:
+            self.DeathTime += frame_time
+            self.Opacify = random.randint(0, 1)
+
+            if self.DeathTime > 3:
+                self.DeathTime = 0
+                self.Death = False
+                self.Opacify = 1
+
         if self.Boom == True:
             self.BoomTime += frame_time
             if self.BoomTime > 0.05:
                 if self.BoomSpriteX > 46:
                     self.BoomSpriteX = 0
-                    self.image = load_image('Resource/Player/수정됨_Player.png')
+                    self.image = load_image('Resource/Player/Player.png')
                     self.Boom = False
 
                 self.BoomTime = 0
@@ -123,6 +147,7 @@ class Player:
                 self.y = 5
 
 
+
     def draw(self):
         # fill here
         #Boy.font.draw(self.x - 40, self.y + 50, 'Time : %3.2f' %get_time(), (255, 255, 0))
@@ -132,10 +157,11 @@ class Player:
             self.image.clip_draw(180 * self.BoomSpriteX, 0, 180, 398, self.x, self.y)
         else:
             self.image.clip_draw(self.Sprite, 0, 62, 96, self.x, self.y)
-        draw_rectangle(*self.get_bb())
+            self.image.opacify(self.Opacify)
+        #draw_rectangle(*self.get_bb())
 
     def get_bb(self):
         if self.Boom == False:
-            return self.x - 12.5, self.y - 12.5, self.x + 12.5, self.y + 12.5
+            return self.x - 5, self.y - 5, self.x + 5, self.y + 5
         else:
             return self.x+ 9999 - 15, self.y+ 9999 - 32.5, self.x+ 9999 + 15, self.y+ 9999 + 32.5

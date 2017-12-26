@@ -25,6 +25,9 @@ class Item:
         if self.Type == 1:
             self.image = load_image('Resource/Item/Missileupgrade.png')
 
+        elif self.Type == 4:
+            self.image = load_image('Resource/Item/Life.png')
+
         else:
             self.image = load_image('Resource/Item/BoomPlus.png')
 
@@ -46,12 +49,16 @@ class Item:
 
 
     def draw(self):
-        self.image.clip_draw(0, 0, 38, 22, self.x, self.y)
-        draw_rectangle(*self.get_bb())
+        if self.Type == 4:
+            self.image.clip_draw(0, 0, 52, 68, self.x, self.y)
+        else:
+            self.image.clip_draw(0, 0, 38, 22, self.x, self.y)
+        #draw_rectangle(*self.get_bb())
 
     def get_bb(self):
-        if self.Type != 3:
+        if self.Type == 1 or self.Type == 2:
             return self.x - 19, self.y - 11, self.x + 19, self.y + 11
+
         else:
             return 9999 - 19, 9999 - 11, 9999 + 19, 9999 + 11
 

@@ -17,14 +17,53 @@ BoomB = [] # 폭탄의 탄환 리스트 컨테이너
 Mop = [] # 몬스터 리스트 컨테이너
 ITEM = []
 BoomCount = []
+Life = []
 hero = None # 플레이어
+LogoScene = None
+
+
+ItemSound = None
+MonsterDestorySound = None
+Hit = None
+
+
+class Title:
+    Y = 0
+    BGM = None
+    Title = True
+    Time = 0
+    def __init__(self):
+        self.x = 400
+        self.y = 500
+        self.image = load_image('Resource/Title/Logo.png')
+
+    def update(self, frame_time):
+
+        self.Time += frame_time
+        if self.Time > 2 and self.Time < 2.1:
+            self.image = load_image('Resource/Title/title.png')
+
+        elif self.Time > 2.2:
+            events = get_events()
+            for event in events:
+                if event.type == SDL_KEYDOWN and event.key == SDLK_SPACE:
+                    self.Title = False
+
+
+    def Render(self):
+        self.image.draw(self.x, self.y)
 
 
 
 class Field:
     Y = 0
+    BGM = None
+    Tile = True
     def __init__(self):
         self.image = load_image('Resource/Map/Background.bmp')
+        self.BGM = load_music('Sound/BGM2.mp3')
+        self.BGM.set_volume(30)
+        self.BGM.repeat_play()
 
     def update(self, frame_time):
         self.Y += frame_time * 70
@@ -87,6 +126,29 @@ def main():
     global ProgressTime
     global ITEM
     global BoomCount
+    global Timer
+    global ItemSound
+    global Hit
+    global MonsterDestorySound
+    global LogoScene
+
+    LogoScene = Title()
+
+
+    while True:
+        clear_canvas()
+        frame_time = get_frame_time()
+        LogoScene.update(frame_time)
+        LogoScene.Render()
+        update_canvas()
+        if LogoScene.Title == False:
+            break;
+
+
+
+
+
+
 
     PlayerBullet = [Bullet.MyBullet(9000, 300, 1)]
     MonsterBullet = [Bullet.MonBullet(-10, -999, -90)]
@@ -98,9 +160,11 @@ def main():
     BoomCount.append(Item.Item(100, 50, 3))
     BoomCount.append(Item.Item(150, 50, 3))
 
+    for i in range(0 , 10):
+        Life.append(Item.Item(50 + (i * 50), 900, 4))
+
 
     Progress = 0
-
 
     hero = Player.Player(PlayerBullet, BoomBullet, BoomB)
     field = Field()
@@ -109,12 +173,21 @@ def main():
     running = True
     current_time = get_time()
     ProgressTime = get_time()
+
+    ItemSound = load_wav('Sound/missile up.wav')
+    ItemSound.set_volume(32)
+
+    Hit = load_wav('Sound/hit.wav')
+    Hit.set_volume(32)
+
+    Timer = 0
     #Mop = [Monster(400, 600, 1, hero) for i in range(0, 2)]
     # 반복문
 
     #Progress = 3
     #ProgressTime += 20
-    #current_time = 20
+    #current_time = 80
+    #Progress = 13
     while running:
         ProgressTime += ProgressTime
         #######################################################
@@ -182,10 +255,21 @@ def main():
                 Mop.append(Monster.Monster(random.randint(50, 750), random.randint(1000, 1400), 0, hero, MonsterBullet))
             Progress += 1
 
-        elif current_time > 73 and Progress == 11:
-            for i in range(0, 10):
-                Mop.append(Monster.Monster(random.randint(50, 750), random.randint(1000, 1400), 0, hero, MonsterBullet))
-            Progress += 1
+
+        elif Progress == 11:
+            index = 0;
+            for i in Mop:
+                index += 1;
+
+            if index == 0:
+                Timer = current_time
+                Progress += 1
+
+
+        elif current_time > Timer + 1 and Progress == 12:
+                Mop.append(Monster.Monster(400, 1200, 4, hero, MonsterBullet))
+                Progress += 1
+
 
 
 
@@ -227,6 +311,7 @@ def main():
                         ITEM.append(Item.Item(mop.x, mop.y, 2))
                 Mop.remove(mop)
 
+
         for item in ITEM:
             item.update(frame_time)
 
@@ -240,6 +325,7 @@ def main():
             for pBullet in PlayerBullet:
                 if Collide(pBullet, mop) :
                     mop.Hp -= pBullet.Power
+                    Hit.play()
                     PlayerBullet.remove(pBullet)
 
         for mop in Mop: # 몬스터 <-> 폭탄의 총알
@@ -247,15 +333,24 @@ def main():
                 if Collide(boomb, mop) :
                     mop.Hp -= 1
                     BoomB.remove(boomb)
+                    Hit.play()
 
         for mop in Mop: # 몬스터 <-> 폭탄
             for boombullet in BoomBullet:
                 if Collide(boombullet, mop):
-                    mop.Hp -= 10
+                    mop.Hp -= 1
 
         for pBullet in MonsterBullet: # 몬스터 총알 <-> 플레이어
             if Collide(pBullet, hero):
                 MonsterBullet.remove(pBullet)
+                if hero.Death == False and hero.PlayerLife != 0:
+                    hero.PlayerLife -= 1
+                    hero.Death = True
+                    hero.DeathTime = 0
+                    hero.x = 400
+                    hero.y = 100
+                    if hero.PlayerLife < 0:
+                        hero.PlayerLife = 0
 
         for pBullet in MonsterBullet: # 폭탄 <-> 몬스터 총알
             for boombullet in BoomBullet:
@@ -266,9 +361,12 @@ def main():
             if Collide(item, hero):
                 if item.Type == 1:
                     hero.Power += 1
+                    ItemSound.play()
                 elif item.Type == 2:
                     hero.BoomCount += 1
+                    ItemSound.play()
                 ITEM.remove(item)
+
 
 
 
@@ -279,11 +377,11 @@ def main():
         field.draw()
 
 
+        for mop in Mop:
+            mop.draw()
 
         for mBullet in MonsterBullet:
             mBullet.draw()
-        for mop in Mop:
-            mop.draw()
 
         for bBullet in BoomB:
             bBullet.draw()
@@ -301,6 +399,9 @@ def main():
 
         for i in range(0,hero.BoomCount):
             BoomCount[i].draw()
+
+        for i in range(0,hero.PlayerLife):
+            Life[i].draw()
 
 
         hero.draw()

@@ -2,8 +2,318 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37c0e346-355e-41b0-9245-7f8396d98c0a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Sound/Bomb.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Sound/Item.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Sound/Lazer.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Sound/Loading.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Sound/Missile.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Sound/Monster1.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Sound/Stage1.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bomb/Bomb_Airplan.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bomb/Bomb_Bullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bomb/Bomb_Bullet2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bomb/Bomb_Bullet3.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bomb/Bomb_Bullet4 - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bomb/Bomb_Bullet4.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/BMBullet_Straight.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/BojoBullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/BombBullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/BossBullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Bullet_Eg_a.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Bullet_Eg_b.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Bullet_Eg_c.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Bullet_Eg_d.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Bullet_Explo.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Bullet_Mob_A.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Bullet_Mob_D.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Guide_Bullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Helper_Bullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/LMBullet_Foward.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/LMBullet_Straight.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/MBasic_Bullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/MBasic_Bullet2 - 복사본 (2).bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/MBasic_Bullet2 - 복사본 (3).bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/MBasic_Bullet2 - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/MBasic_Bullet2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/MGuide_Bullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Magic_Elec.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Magic_Elec2 - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Magic_Elec2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Magic_Elec3.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Player_Bullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Player_Bullet_Screw.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Special_Bullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Stage2_Bullet - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/Stage2_Bullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/fire_lazer - 복사본 - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/fire_lazer - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/fire_lazer.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/lazer_body.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Bullet/lazer_head.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Effect/Effect_1.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Effect/Effect_2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Effect/Effect_3.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Effect/Effect_4.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Effect/Effect_5.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Effect/Effect_6.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Effect/Effect_7 - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Effect/Effect_7.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Effect/Effect_Boss.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Effect/Effect_Crash.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Effect/Effect_Power.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Effect/test.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Item/Item_Bomb.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Item/Item_Power.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/BigAirPlan - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/BigAirPlan.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boat_Body.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boat_Delete.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boat_Posin1.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boat_Posin2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boat_Posin3.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boat_Posin4.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boat_Posin5.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boat_Posin6.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/BossBoat.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/BossBoat_Posin1.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/BossBoat_Posin2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/BossBoat_Posin3.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/BossBoat_Posin4.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/BossBoat_Posin5.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/BossBoat_Posin6.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/BossBoat_Posin7.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/BossBoat_Posin8.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/BossBoat_Posin9.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boss_body.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boss_body2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boss_change.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boss_change2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boss_head - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boss_head.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boss_left.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boss_left2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boss_propeller.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boss_right.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Boss_right2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/MidAirPlan.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Monster_1.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Monster_2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Monster_3.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Monster_4.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Monster_5.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Monster_5_left.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Monster_5_right.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Monster_6_left.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/Monster_6_right.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/air_Monster1.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/air_Monster2.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/air_Monster3.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/air_Monster4.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/air_Monster5.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/air_Monster6.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/air_Monster7.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/air_Monster8.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/air_Monster9.BMP" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/fish.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Monster/fish2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Player/Effect_7.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Player/Helper - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Player/Helper.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Player/Move_LR_A.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Player/Move_TB_A.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Player/Player - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Player/Player.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Player/Player_left.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Player/Player_right.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Player/Player_up - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Player/Player_up.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/Score/Score.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/StageBack/Background.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/StageBack/StageBack.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/StageBack/Stage_1.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/StageBack/Stage_2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/BombUp.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/Credit.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/Energy - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/Energy.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/Energy_bar - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/Energy_bar1.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/Energy_bar2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/Energy_bar3.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/Energy_bar4.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/Energy_bar5.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/PowerDown.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/PowerUp - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/PowerUp.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/StageLogo.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/Status_Top.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/UI/boom.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/logo/character - 복사본 - 복사본.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/logo/character.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Stage/logo/logo.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스1/Video/Select.wmv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/10_Inter/Inter_Hp.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/10_Inter/Inter_HpBar.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/10_Inter/Inter_HpBar.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/10_Inter/Inter_Number.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/10_Inter/Inter_Number.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/1_Hero/Hero_A/Move_LR_A.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/1_Hero/Hero_A/Move_LR_A.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/1_Hero/Hero_A/Move_TB_A.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/1_Hero/Hero_A/Move_TB_A.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/1_Hero/Hero_B/Move_LR_B.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/1_Hero/Hero_B/Move_LR_B.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/1_Hero/Hero_B/Move_TB_B.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/1_Hero/Hero_B/Move_TB_B.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/1_Hero/캐릭터_C.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/1_Hero/캐릭터_D.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/20_BackBuffer/Back.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/20_BackBuffer/BackBuf.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/2_Mob_De/Mob_A.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/2_Mob_De/Mob_A.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/2_Mob_De/Mob_B.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/2_Mob_De/Mob_B.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/2_Mob_De/Mob_C.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/2_Mob_De/Mob_C.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/2_Mob_De/Mob_D.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/2_Mob_De/Mob_D.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Boss_A.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Boss_A.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Boss_A_XY.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Boss_A_XY.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Boss_B.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Boss_B.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Boss_B_XY.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Boss_B_XY.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Nomal_A.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Nomal_A.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Nomal_A_XY.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Nomal_A_XY.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Nomal_B.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Nomal_B.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Nomal_B_XY.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/3_Mob_Boss/Nomal_B_XY.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_ArM.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_ArM.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_ArTan.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_ArTan.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Eagle.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Eagle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Eg_a.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Eg_a.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Eg_b.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Eg_b.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Eg_c.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Eg_c.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Eg_d.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Eg_d.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Enag_A.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Enag_A.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Enag_B.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Enag_B.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Enag_C.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Enag_C.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Explo.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Explo.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Guid.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Hero/Bullet_Rugby.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Mob/Bullet_Mob_A.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Mob/Bullet_Mob_A.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Mob/Bullet_Mob_B.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Mob/Bullet_Mob_B.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Mob/Bullet_Mob_C.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Mob/Bullet_Mob_C.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Mob/Bullet_Mob_D.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Bullet_Mob/Bullet_Mob_D.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Amor/Amor_A.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Amor/Amor_A.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Amor/Amor_B.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Amor/Amor_B.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Amor/Amor_C.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Amor/Amor_C.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Amor/Amor_Cir.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Bullet/Magic_Clon.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Bullet/Magic_Clon.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Bullet/Magic_Cut_a.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Bullet/Magic_Cut_a.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Bullet/Magic_Cut_b.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Bullet/Magic_Cut_b.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Bullet/Magic_Cut_c.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Bullet/Magic_Cut_c.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Bullet/Magic_Elec.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Bullet/Magic_Elec.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Bullet/Magic_Light.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/4_Bullet/Magic_Bullet/Magic_Light.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/50_Button/Edit.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/50_Button/Exit.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/50_Button/Start.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/5_Stage/Stage_A.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/5_Stage/Stage_A.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/5_Stage/Stage_B.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/5_Stage/Stage_B.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/5_Stage/통맵.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/6_Item/Item_Eagle.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/6_Item/Item_Eagle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/6_Item/Item_Power.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/6_Item/Item_Power.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/9_Effect/이펙트.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/스프라이트에서 지워야 하는 색은 255 255 255 (흰색) 입니다..txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스2/1945_emg/참고사항.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Button/Edit.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Button/Exit.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Button/Start.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Bullet/BMBullet_Straight.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Bullet/Helper_Bullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Bullet/LMBullet_Foward.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Bullet/LMBullet_Straight.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Bullet/MBasic_Bullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Bullet/MGuide_Bullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Bullet/Player_Bullet_Screw.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Bullet/Player_Bullet_Straight.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Bullet/Special_Bullet.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Effect/Effect_1.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Effect/Effect_2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Effect/Effect_3.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Effect/Effect_Boss.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Effect/Effect_Crash.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Effect/Effect_Power.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Item/Item_Bomb.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Item/Item_Power.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Monster/Boss.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Monster/LBossCenter.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Monster/LBossLeft.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Monster/LBossMain.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Monster/LBossRight.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Monster/Monster_1.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Monster/Monster_2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Monster/Monster_3.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Monster/Monster_4.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Player/Helper.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Player/Player.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Player/Player_Bomb.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Player/Special_Attack.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/Score/Score.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/StageBack/StageBack.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/StageBack/Stage_1.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/Stage/StageBack/Stage_2.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/backbuffer.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/1945리소스3/menu.bmp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/Effect/수정됨_Destory.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/Effect/수정됨_Strike.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/Missile/보스미사일.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/Missile/수정됨_BoomMis.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/Monster/수정됨_MiddleBoss.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/Player/수정됨_Player.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Resource/Title/Title.bmp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resource/Boss/boss.png" afterPath="$PROJECT_DIR$/Resource/Boss/boss.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resource/Effect/Strike.png" afterPath="$PROJECT_DIR$/Resource/Effect/Strike.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resource/Monster/MiddleBoss.png" afterPath="$PROJECT_DIR$/Resource/Monster/MiddleBoss.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Resource/Player/Player.png" afterPath="$PROJECT_DIR$/Resource/Player/Player.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Bullet.py" afterPath="$PROJECT_DIR$/Bullet.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Game.py" afterPath="$PROJECT_DIR$/Game.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Item.py" afterPath="$PROJECT_DIR$/Item.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Monster.py" afterPath="$PROJECT_DIR$/Monster.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Player.py" afterPath="$PROJECT_DIR$/Player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +325,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Game.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1367">
-              <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+            <state relative-caret-position="199">
+              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
               <folding>
                 <element signature="e#74#85#0" expanded="true" />
               </folding>
@@ -27,29 +337,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PBullet.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resource/Missile/PBullet.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="pico2d.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pico2d.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="268" column="0" lean-forward="false" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Item.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Item.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+            <state relative-caret-position="-115">
+              <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Monster_Red.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resource/Monster/Monster_Red.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -60,28 +366,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="수정됨_Player.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Resource/Player/수정됨_Player.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="team_data.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/team_data.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Player.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Player.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="138" column="32" lean-forward="false" selection-start-line="138" selection-start-column="32" selection-end-line="138" selection-end-column="32" />
+            <state relative-caret-position="2412">
+              <caret line="145" column="26" lean-forward="true" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="26" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -92,8 +381,8 @@
       <file leaf-file-name="Monster.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Monster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3496">
-              <caret line="190" column="39" lean-forward="true" selection-start-line="190" selection-start-column="39" selection-end-line="190" selection-end-column="39" />
+            <state relative-caret-position="474">
+              <caret line="58" column="54" lean-forward="false" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -101,11 +390,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MiddleMissile.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resource/Missile/MiddleMissile.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BossMissile.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Resource/Missile/BossMissile.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="boss.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Resource/Boss/boss.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Bullet.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bullet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+            <state relative-caret-position="341">
+              <caret line="24" column="37" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="24" selection-end-column="37" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -120,6 +430,10 @@
       <find>PlayerBullet</find>
       <find>inf</find>
       <find>print</find>
+      <find>draw_rectangle</find>
+      <find>play()</find>
+      <find>수정됨</find>
+      <find>Field</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -130,17 +444,17 @@
       <list>
         <option value="$PROJECT_DIR$/mygame.py" />
         <option value="$PROJECT_DIR$/adjust_run_and_action.py" />
-        <option value="$PROJECT_DIR$/Bullet.py" />
-        <option value="$PROJECT_DIR$/Item.py" />
-        <option value="$PROJECT_DIR$/Monster.py" />
         <option value="$PROJECT_DIR$/Player.py" />
+        <option value="$PROJECT_DIR$/Item.py" />
+        <option value="$PROJECT_DIR$/Bullet.py" />
         <option value="$PROJECT_DIR$/Game.py" />
+        <option value="$PROJECT_DIR$/Monster.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="16" />
-    <option name="y" value="128" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="129" />
+    <option name="y" value="459" />
     <option name="width" value="1681" />
     <option name="height" value="621" />
   </component>
@@ -160,8 +474,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,7 +490,25 @@
               <item name="Game" type="b2602c69:ProjectViewProjectNode" />
               <item name="Game" type="462c0819:PsiDirectoryNode" />
               <item name="Resource" type="462c0819:PsiDirectoryNode" />
+              <item name="Boss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource" type="462c0819:PsiDirectoryNode" />
+              <item name="Effect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource" type="462c0819:PsiDirectoryNode" />
               <item name="Item" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource" type="462c0819:PsiDirectoryNode" />
+              <item name="Map" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Game" type="b2602c69:ProjectViewProjectNode" />
@@ -190,12 +520,31 @@
               <item name="Game" type="b2602c69:ProjectViewProjectNode" />
               <item name="Game" type="462c0819:PsiDirectoryNode" />
               <item name="Resource" type="462c0819:PsiDirectoryNode" />
+              <item name="Monster" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource" type="462c0819:PsiDirectoryNode" />
               <item name="Player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="Resource" type="462c0819:PsiDirectoryNode" />
+              <item name="Title" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Game" type="462c0819:PsiDirectoryNode" />
+              <item name="Sound" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -312,77 +661,39 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22198732" sideWeight="0.5520833" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22198732" sideWeight="0.44791666" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22198732" sideWeight="0.44791666" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26638478" sideWeight="0.49375" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22198732" sideWeight="0.5520833" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22198732" sideWeight="0.44791666" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26638478" sideWeight="0.49375" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Tile.bmp" />
-    <entry file="file://$PROJECT_DIR$/Stage_B.bmp" />
-    <entry file="file://$PROJECT_DIR$/team_data.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StageBack.bmp" />
-    <entry file="file://$PROJECT_DIR$/Game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2318">
-          <caret line="124" column="46" lean-forward="false" selection-start-line="124" selection-start-column="46" selection-end-line="124" selection-end-column="46" />
-          <folding>
-            <element signature="e#74#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/animation_sheet.png" />
     <entry file="file://$PROJECT_DIR$/get_frame_time_rate.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pico2d.py">
@@ -399,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -446,13 +756,6 @@
     <entry file="file://$PROJECT_DIR$/mBullet.jpg" />
     <entry file="file://$PROJECT_DIR$/get_frame_time_rate.py" />
     <entry file="file://$PROJECT_DIR$/grass.png" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pico2d.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4864">
-          <caret line="265" column="0" lean-forward="false" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Resource/Monster/RLMonster.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -478,18 +781,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bullet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="27" column="50" lean-forward="false" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/Resource/Monster/Monster.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resource/Missile/PBullet.png">
@@ -497,24 +794,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Item.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/random.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="4009">
+          <caret line="219" column="0" lean-forward="false" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Monster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3496">
-          <caret line="190" column="39" lean-forward="true" selection-start-line="190" selection-start-column="39" selection-end-line="190" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/Resource/Missile/MiddleMissile.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Resource/Player/Player.png">
@@ -522,10 +811,25 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Player.py">
+    <entry file="file://$PROJECT_DIR$/Item.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="138" column="32" lean-forward="false" selection-start-line="138" selection-start-column="32" selection-end-line="138" selection-end-column="32" />
+        <state relative-caret-position="-115">
+          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resource/Boss/boss.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="24" selection-end-column="37" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -534,12 +838,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1367">
-          <caret line="166" column="0" lean-forward="true" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        <state relative-caret-position="199">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
           <folding>
             <element signature="e#74#85#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2412">
+          <caret line="145" column="26" lean-forward="true" selection-start-line="145" selection-start-column="26" selection-end-line="145" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pico2d.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="268" column="0" lean-forward="false" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Monster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="58" column="54" lean-forward="false" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Resource/Missile/BossMissile.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
